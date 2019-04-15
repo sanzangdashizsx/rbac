@@ -1,4 +1,6 @@
-1. 拷贝rbac组件到新的项目中，并且要注册
+使用方式:
+
+1. 拷贝rbac组件到新的项目中，并且要注册app
 
 1. 数据库的迁移
 
@@ -56,13 +58,13 @@
 
       # 菜单存放在session中的KEY
       MENU_SESSION_KEY = 'menu'
-
+      #白名单,不需要权限的页面
       WHITE_LIST = [
           r'^/login/$',
           r'^/reg/$',
           r'^/admin/.*',
       ]
-
+      #需要登录但是不需要权限的页面
       NO_PERMISSION_LIST = [
           r'^/index/$',
       ]
